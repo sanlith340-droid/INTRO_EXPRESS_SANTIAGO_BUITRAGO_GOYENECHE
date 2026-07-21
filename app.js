@@ -18,9 +18,10 @@ app.listen(puerto,()=>{
 
 
 app.get("/saludo",(req,res)=>{
-    res.send(`<h3> Hola Gente de YouTube soy el Loquendero340 y hoy vamos hablar de python XDXD </h3>`)
+    res.send(`<h3> Hola Gente de YouTube soy el Loquendero340 y hoy vamos hablar de python XDXD</h3>${mivar}`)
 })
 
 app.listen(puerto,()=>{
-    console.log(`Servidor funcionando en el puerto ${puerto}!!`);
+    console.log(`Servidor htpp://localhost:${puerto}
+        htpp://localhost:3030${puerto}`);
 })
