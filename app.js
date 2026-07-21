@@ -16,12 +16,22 @@ app.listen(puerto,()=>{
 })
 
 
+//ENPOINTS//
 
-app.get("/saludo",(req,res)=>{
-    res.send(`<h3> Hola Gente de YouTube soy el Loquendero340 y hoy vamos hablar de python XDXD</h3>${mivar}`)
-})
+app.get("/saludo/:ficha", (req, res) => {
+    const ficha = req.params.ficha;
+
+    res.send(`<h3>Hola Gente de YouTube</h3>
+              <p>La ficha es: ${ficha}</p>`);
+});
+
 
 app.listen(puerto,()=>{
     console.log(`Servidor htpp://localhost:${puerto}
         htpp://localhost:3030${puerto}`);
+})
+
+app.get("/clientes/:id",(req,res)=>{
+    const id = req.params.id
+    res.send(`<h3> Soy cliente </h3>${id}`)
 })
